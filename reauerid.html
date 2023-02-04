@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div { */
+        /* padding: 10px; */
+        /* } */
+        .error_message {
+            color: red;
+        }
+    </style>
+</head>
+<!-- vedetion form alreat -->
+
+<body>
+    <form action="">
+        <article>
+            <input type="text" onfocus="focushandlar()" onblur="onblure(event)" />
+        </article>
+        <h3 class="error_message" id="error_text"></h3>
+        <div>
+            <input type="button" value="submit form">
+        </div>
+    </form>
+</body>
+<script>
+    /* function focushandlar() {
+         const errortext = document.getElementById("error_text");
+         errortext.innerText = "";
+     }
+ 
+     function onblure() {
+         const text = event.target.value;
+         if (text.trim() === "") {
+             // console.log("plese Enter your text");
+             const errortext = document.getElementById("error_text");
+             errortext.innerText = "Requrid"
+         }
+ 
+ 
+     }*/
+
+    function focushandlar() {
+        const errortext = document.getElementById("error_text");
+        errortext.innerText = "";
+    }
+
+    function onblure(event) {
+        const text =event.target.value;
+        if (text === "") {
+            const errortext = document.getElementById("error_text");
+            errortext.innerText = "Requrid"
+        }
+    }
+
+</script>
+
+</html>
